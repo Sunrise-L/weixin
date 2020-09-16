@@ -1,16 +1,77 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "index/index",
+            "style": {
+                "navigationBarTitleText": "云南旅游职业学校"
+            }
+        },
+        {
+            "path": "index/zoujinlvyuan",
+            "style": {
+                "navigationBarTitleText": "走进旅院"
+            }
+        },
+        {
+            "path": "index/xuexiaogaikuo",
+            "style": {
+                "navigationBarTitleText": "学校概括"
+            }
+        },
+        {
+            "path": "index/zhaoshengjianzhang",
+            "style": {
+                "navigationBarTitleText": "招生简章"
+            }
+        },
+        {
+            "path": "index/baomingzixun",
+            "style": {
+                "navigationBarTitleText": "报名咨询"
+            }
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "write",
+        "navigationBarTitleText": "云南旅游职业学校",
+        "navigationBarBackgroundColor": "#7D1522",
+        "backgroundColor": "#7D1522"
+    },
+    "tabBar": {
+        "color": "#8E8E93",
+        "position": "bottom",
+        "selectedColor": "#7D1523",
+        "backgroundColor": "#fff",
+        "list": [{
+                "pagePath": "index/index",
+                "iconPath": "static/主页.png",
+                "selectedIconPath": "static/主页1.png",
+                "text": "主页"
+            },
+            {
+                "pagePath": "index/zoujinlvyuan",
+                "iconPath": "static/走进旅院.png",
+                "selectedIconPath": "static/走进旅院1.png",
+                "text": "走进旅院"
+            },
+            {
+                "pagePath": "index/xuexiaogaikuo",
+                "iconPath": "static/学校概况.png",
+                "selectedIconPath": "static/学校概况1.png",
+                "text": "学校概括"
+            },
+            {
+                "pagePath": "index/zhaoshengjianzhang",
+                "iconPath": "static/enrollment.png",
+                "selectedIconPath": "static/招生简章1.png",
+                "text": "招生简章"
+            },
+            {
+                "pagePath": "index/baomingzixun",
+                "iconPath": "static/联系我们.png",
+                "selectedIconPath": "static/报名咨询1.png",
+                "text": "报名咨询"
+            }
+        ]
+    }
 }
