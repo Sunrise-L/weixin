@@ -102,11 +102,13 @@
       <div class="specialty">
         <div class="school">
           <img src="../static/timg (2).png" alt />
-          <p>
-            这里是学校简介，大约展示三行文字左右，超出的部分用…三点省略号代替
-            这里大约也就能写三行
-            或者四行
-          </p>
+          <div class="text_sch">
+            <p>
+              云南旅游职业学院是经云南省人民政府批准、国家教育部备案，
+              直属于云南省旅游发展委员会的云南省内唯一的一所旅游类、
+              大专层次、公办全日制高等职业院校。
+            </p>
+          </div>
         </div>
         <navigator url="../index/xuexiaogaikuo" open-type="switchTab" hover-class="none">
           <button>详细了解我们</button>
@@ -119,12 +121,14 @@
       <h1>招生计划</h1>
       <p>The adminssion plan</p>
       <div class="specialty plan_p">
-        <p>2020年招生计划</p>
-        <div class="school plan">
-          <img src="../static/8de904b7c48ed38988907484824f28f2.png" alt />
-          <div class="span">
-            <span class="span1">云南旅游职业学院计划2020年招生…</span>
-            <span class="span2">2020-06-15. 15:53:45</span>
+        <div class="plan_backg">
+          <p>2020年招生计划</p>
+          <div class="school plan">
+            <img src="../static/8de904b7c48ed38988907484824f28f2.png" alt />
+            <div class="span">
+              <span class="span1">云南旅游职业学院计划2020年招生…</span>
+              <span class="span2">2020-06-15. 15:53:45</span>
+            </div>
           </div>
         </div>
         <navigator url="../index/zhaoshengjianzhang" open-type="switchTab" hover-class="none">
@@ -138,11 +142,13 @@
       <h1>报名咨询</h1>
       <p>Registration consulting</p>
       <div class="specialty plan_p">
-        <p>报名咨询</p>
-        <div class="school plan">
-          <div class="span">
-            <span>请报名学子及时查看小程序内最新招生信息，如有疑问，可以点击下方联系电话或手机进行咨询！</span>
-            <span class="span2">2020-06-17 11:50:10</span>
+        <div class="plan_backg">
+          <p>报名咨询</p>
+          <div class="school plan">
+            <div class="span">
+              <span>请报名学子及时查看小程序内最新招生信息，如有疑问，可以点击下方联系电话或手机进行咨询！</span>
+              <span class="span2">2020-06-17 11:50:10</span>
+            </div>
           </div>
         </div>
         <navigator url="../index/baomingzixun" open-type="switchTab" hover-class="none">
@@ -165,8 +171,8 @@
         <div class="school" :src="texturl+item.url">
           <!-- <strong :src="texturl+item.url">云南旅游职业学院</strong>
           <p :src="texturl+item.url">学校地址： 昆明市龙泉路268号</p>
-          <p :src="texturl+item.url">联系电话： 0871-5187607 0871-5187890</p>
-          <p :src="texturl+item.url">官方网址： http://zsw.ynctv.net/ http://www.ynctv.com/</p> -->
+          <p :src="texturl+item.url">联系电话： 0871-5187607</p>
+          <p :src="texturl+item.url">官方网址： http://zsw.ynctv.net/</p> -->
         </div>
         <navigator url="../index/baomingzixun" open-type="switchTab" hover-class="none">
           <button>查看更多</button>
@@ -210,7 +216,7 @@ export default {
   onLoad() {
     console.log(url);
     uni.request({
-      url: url + "api/services/app/MiniProgramCarousel/GetCarousels", 
+      url: url + "api/services/app/MiniProgramCarousel/GetCarousels",
       data: {},
       method: "GET",
       header: {
@@ -296,6 +302,7 @@ export default {
   color: #b2b2b2;
   margin-bottom: 20px;
 }
+
 .specialty {
   width: 100%;
   display: flex;
@@ -338,6 +345,7 @@ export default {
 .plan_p {
   width: 95%;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .plan_p p {
@@ -349,12 +357,25 @@ export default {
 .plan img {
   width: 129px;
   height: 80px;
+  margin-right: 30px;
 }
 
 .plan {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.plan_backg {
+  background: #f5f5f5;
+  text-align: left;
+  margin-bottom: 45px;
+}
+
+.text_sch p {
+  text-align: left;
+  width: 90%;
+  margin-left: 17px;
 }
 
 .span span {
@@ -366,6 +387,7 @@ export default {
 
 .span2 {
   font-size: 12px;
+  line-height: 10px;
 }
 
 /* 报名咨询 */
@@ -381,5 +403,10 @@ export default {
   font-size: 18px;
   font-weight: 900;
   color: #515151;
+}
+
+.specialty map{
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 </style>

@@ -82,6 +82,7 @@ export default {};
 .school img {
   width: 129px;
   height: 80px;
+  margin-right: 30px;
 }
 
 .span1 {

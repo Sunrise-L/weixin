@@ -79,8 +79,8 @@
         ></map>
         <strong>云南旅游职业学院</strong>
         <p>学校地址： 昆明市龙泉路268号</p>
-        <p>联系电话： 0871-5187607 0871-5187890</p>
-        <p>官方网址： http://zsw.ynctv.net/ http://www.ynctv.com/</p>
+        <p>联系电话： 0871-5187607</p>
+        <p>官方网址： http://zsw.ynctv.net/ </p>
       </div>
     </div>
   </div>
